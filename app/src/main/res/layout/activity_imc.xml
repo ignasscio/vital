@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".IMC_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question_whichGenre"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioGroup android:id="@+id/rg_genre"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:button="@null"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:text="@string/man"
+                android:background="@mipmap/hombre"
+                android:layout_marginRight="20dp"
+                android:gravity="bottom|center"
+                android:paddingTop="10dp"/>
+
+            <RadioButton
+                android:button="@null"
+                android:layout_marginLeft="20dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@mipmap/mujer"
+                android:text="@string/woman"
+                android:gravity="bottom|center"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question_whichAge"/>
+
+    <EditText android:id="@+id/et_edad"
+        android:layout_marginTop="10dp"
+        android:layout_width="296dp"
+        android:layout_height="62dp"
+        android:background="@drawable/round_gray_button"
+        android:hint="@string/hint_age"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/gray_text"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColorHighlight="@color/advice"
+        android:inputType="number"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_whichHeight"/>
+
+        <EditText android:id="@+id/et_estatura"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="62dp"
+            android:background="@drawable/round_gray_button"
+            android:hint="@string/hint_height"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/gray_text"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColorHighlight="@color/advice"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_whichHeight"/>
+
+        <EditText android:id="@+id/et_peso"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="62dp"
+            android:textColorHighlight="@color/advice"
+            android:background="@drawable/round_gray_button"
+            android:hint="@string/hint_weight"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/gray_text"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:inputType="number"/>
+
+        <Button android:id="@+id/btn_calcular"
+            android:layout_marginTop="40dp"
+            android:layout_width="296dp"
+            android:layout_height="62dp"
+            android:background="@drawable/round_beige_button"
+            android:text="@string/calculate"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView android:id="@+id/tv_pesoActual"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginRight="40dp"
+                android:layout_width="138dp"
+                android:layout_height="55dp"
+                android:text="69 kg."
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/round_advice_button"/>
+
+            <TextView android:id="@+id/tv_pesoIdeal"
+                android:layout_marginLeft="40dp"
+                android:layout_width="138dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_height="55dp"
+                android:text="69 kg."
+                android:gravity="center"
+                android:background="@drawable/round_orange_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="138dp"
+                android:layout_height="55dp"
+                android:text="Actual"
+                android:gravity="center"/>
+
+            <TextView
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="138dp"
+                android:layout_height="55dp"
+                android:text="Ideal"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/splash"
+        android:textColor="@color/vital"
+        android:textStyle="italic|bold"
+        android:textSize="55sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:layout_gravity="center"
+        android:textColor="@color/gray_text"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <Button android:id="@+id/btn_regGoogle"
+        android:layout_marginTop="50dp"
+        android:layout_width="296dp"
+        android:layout_height="62dp"
+        android:background="@drawable/round_gray_button"
+        android:text="@string/register_with_google"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/gray_text"
+        android:layout_gravity="center"/>
+
+    <Button android:id="@+id/btn_regFacebook"
+        android:layout_marginTop="50dp"
+        android:layout_width="296dp"
+        android:layout_height="62dp"
+        android:background="@drawable/round_gray_button"
+        android:text="@string/register_with_facebook"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/gray_text"
+        android:layout_gravity="center"
+        android:enabled="false"
+        android:clickable="false"/>
+
+    <Button android:id="@+id/btn_createAcc"
+        android:layout_marginTop="50dp"
+        android:layout_width="296dp"
+        android:layout_height="62dp"
+        android:background="@drawable/round_beige_button"
+        android:text="@string/create_an_account"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

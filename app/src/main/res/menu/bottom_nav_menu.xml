@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_inicio"
+        android:icon="@mipmap/inicio"
+        android:title="Inicio"
+        />
+
+    <item android:id="@+id/navigation_alimentos"
+        android:icon="@mipmap/alimento"
+        android:title="Alimentos"
+        />
+
+    <item android:id="@+id/navigation_recetas"
+        android:icon="@mipmap/receta"
+        android:title="Recetas"
+        />
+
+    <item android:id="@+id/navigation_ejercicios"
+        android:icon="@mipmap/ejercicio"
+        android:title="Ejercicios"
+        />
+
+    <item android:id="@+id/navigation_perfil"
+        android:icon="@mipmap/perfil"
+        android:title="Perfil"
+        />
+
+</menu>

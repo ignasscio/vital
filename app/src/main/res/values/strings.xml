@@ -1,0 +1,41 @@
+<resources>
+    <!--LEGACY-->
+    <string name="app_name">Vital</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!--RELEASE-->
+    <string name="splash">Vital</string>
+    <string name="welcome">Bienvenido (a)</string>
+    <string name="register_with_google">Regístrate con Google</string>
+    <string name="register_with_facebook">Regístrate con Facebook</string>
+    <string name="create_an_account">Crear una cuenta</string>
+    <string name="advice">Ten el cuidado de tu alimentación en tus manos</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="create">Crear</string>
+
+    <string name="question_whichGenre">¿Cuál es tu género?</string>
+    <string name="question_whichAge">¿Cuántos años tienes?</string>
+    <string name="question_whichHeight">¿Cuántos años mides? (cm)</string>
+    <string name="question_whichWeight">¿Cuántos pesas? (kg)</string>
+
+    <string name="man">Hombre</string>
+    <string name="woman">Mujer</string>
+
+    <string name="hint_age">Ingresar edad</string>
+    <string name="hint_height">Ingresar estatura</string>
+    <string name="hint_weight">Ingresar peso</string>
+
+    <string name="calculate">Calcular peso ideal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ideal">Ideal</string>
+    <string name="normal">Normal</string>
+    <string name="actual">Actual</string>
+    <string name="recomendations">Recomendaciones</string>
+    <string name="favorites">Favoritos</string>
+
+</resources>
