@@ -9,12 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import itson.edu.mx.vital.R
-import itson.edu.mx.vital.databinding.FragmentHomeBinding
+import itson.edu.mx.vital.databinding.FragmentInicioBinding
 
 class InicioFragment : Fragment() {
 
     private lateinit var inicioViewModel: InicioViewModel
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentInicioBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -28,13 +28,11 @@ class InicioFragment : Fragment() {
         inicioViewModel =
             ViewModelProvider(this).get(InicioViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentInicioBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        inicioViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+
+
         return root
     }
 

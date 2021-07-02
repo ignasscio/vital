@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
         Log.d("debug","${(appBarConfiguration == null)}")
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-        getSupportActionBar()
 
     }
 }
