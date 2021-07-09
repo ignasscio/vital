@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "289899990771",
+    "project_id": "vital-fd464",
+    "storage_bucket": "vital-fd464.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289899990771:android:7cfe533726ced37163b186",
+        "android_client_info": {
+          "package_name": "itson.edu.mx.vital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289899990771-6dcpe7757ltrh4slpl4398p3h0ri43if.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "itson.edu.mx.vital",
+            "certificate_hash": "bdefdf8786ed6bafb9479249575c18c142686c12"
+          }
+        },
+        {
+          "client_id": "289899990771-vkpcdi52emd0qv6jmf2dburqaf5g0r5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPb1twfB-C6w9PDIdPOO_r8BlmZJ9y1fo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289899990771-vkpcdi52emd0qv6jmf2dburqaf5g0r5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
