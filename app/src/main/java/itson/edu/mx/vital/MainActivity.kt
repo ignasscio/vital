@@ -11,6 +11,11 @@ import androidx.navigation.ui.setupWithNavController
 import android.util.Log
 import itson.edu.mx.vital.databinding.ActivityMainBinding
 
+enum class ProviderType{
+    BASIC
+
+}
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
