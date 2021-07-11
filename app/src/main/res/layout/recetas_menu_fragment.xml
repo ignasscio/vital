@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.recetas.RecetasFragment"
+    android:id="@+id/recetasMenuFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="150dp"
+        android:text="Comida"
+        android:textSize="20dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="50dp">
+
+            <ImageButton
+                android:id="@+id/btn_comida1"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:icon="@drawable/genre_btn_radio"
+                android:src="@mipmap/receta"
+                android:text="Comida1"
+                android:textSize="15sp"
+                android:background="@menu/roundcorner"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/gray_text"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_comida2"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:src="@mipmap/receta"
+                android:text="Comida2"
+                android:textSize="15sp"
+                android:background="@menu/roundcorner"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/gray_text"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="50dp"
+            >
+
+            <ImageButton
+                android:id="@+id/btn_comida3"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:icon="@drawable/genre_btn_radio"
+                android:src="@mipmap/receta"
+                android:text="Comida1"
+                android:textSize="15sp"
+                android:background="@menu/roundcorner"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/gray_text"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_comida4"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:src="@mipmap/receta"
+                android:text="Comida2"
+                android:textSize="15sp"
+                android:background="@menu/roundcorner"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/gray_text"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="50dp">
+            <ImageButton
+                android:id="@+id/btn_comida5"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:icon="@drawable/genre_btn_radio"
+                android:src="@mipmap/receta"
+                android:text="Comida1"
+                android:textSize="15sp"
+                android:background="@menu/roundcorner"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/gray_text"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_comida6"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:src="@mipmap/receta"
+                android:text="Comida2"
+                android:textSize="15sp"
+                android:background="@menu/roundcorner"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/gray_text"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp">
+            <ImageButton
+                android:id="@+id/btn_comida7"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:icon="@drawable/genre_btn_radio"
+                android:src="@mipmap/receta"
+                android:text="Comida1"
+                android:textSize="15sp"
+                android:background="@menu/roundcorner"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/gray_text"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_comida8"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:src="@mipmap/receta"
+                android:text="Comida2"
+                android:textSize="15sp"
+                android:background="@menu/roundcorner"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/gray_text"/>
+
+        </TableRow>
+    </TableLayout>
+</FrameLayout>

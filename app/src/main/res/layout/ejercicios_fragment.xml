@@ -3,11 +3,178 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ejercicios.EjerciciosFragment">
+    tools:context=".ui.ejercicios.EjerciciosFragment"
+    android:background="@color/white"
+    android:id="@+id/ejerciciosFragment">
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Ejercicios" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Ejercicios"
+            android:textAlignment="center"
+
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView android:id="@+id/img_inicio_Recomendaciones"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="76dp"
+                android:src="@mipmap/recomendadosejercicio"
+                android:scaleType="fitCenter"/>
+
+            <ImageView android:id="@+id/img_inicio_favoritosEjercicio"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="76dp"
+                android:src="@mipmap/favoritos"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/recomendations"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/favorites"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Botones de seleccion -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp">
+
+
+        <Button
+            android:id="@+id/btn_calentamiento"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/calentamiento"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_brazos"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/brazos"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_pecho"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/pechos"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_espalda"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/espalda"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_cintura"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/cintura"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_gluteos"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_beige_button"
+            android:text="@string/gluteos"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_piernas"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/piernas"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:enabled="false"/>
+
+
+    </LinearLayout>
 
 </FrameLayout>

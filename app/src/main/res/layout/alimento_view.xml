@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/alimentoView"
+    android:background="@color/white">
+
+    <ImageView android:id="@+id/img_alimento"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:src="@mipmap/banana"
+        />
+
+    <TextView android:id="@+id/textView_alimentoNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Banana"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12dp"
+        android:layout_marginTop="14dp"/>
+
+</LinearLayout>

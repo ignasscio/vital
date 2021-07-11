@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.recetas.RecetaSeleccionadaMenuFragment"
+    android:orientation="vertical"
+    android:id="@+id/recetaSeleccionadaMenuFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+       android:orientation="vertical"
+        android:layout_marginTop="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_inicio_recRecetas"
+                android:layout_width="0dp"
+                android:layout_height="177dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/recomendadosreceta" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="@drawable/round_beige_button"
+            android:gravity="center"
+            >
+
+
+            <TextView android:id="@+id/recetas_numPorciones"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="2 Porciones"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/advice"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="20 minutos"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/advice"
+                android:gravity="center"
+                android:background="@drawable/round_beige_button"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="161 calorías"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/advice"
+                android:gravity="center"
+                android:background="@drawable/round_beige_button"
+                />
+
+        </LinearLayout>
+        <!-- Botones de seleccion -->
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="18dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredientes"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/advice"
+                    android:gravity="center"
+                    />
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="50dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_comida1"
+                        android:layout_width="165dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="30dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="20dp"
+                        android:icon="@drawable/genre_btn_radio"
+                        android:src="@mipmap/receta"
+                        android:text="Comida1"
+                        android:textSize="15sp"
+                        android:background="@menu/roundcorner"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/gray_text"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Texto de prueba"
+                        android:textColor="@color/gray_text"
+                        android:textSize="14dp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Procedimiento"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="25sp"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="MUCHO TEXTO"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"
+                android:gravity="center"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+</FrameLayout>

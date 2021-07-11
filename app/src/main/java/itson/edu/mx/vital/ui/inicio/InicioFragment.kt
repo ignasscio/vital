@@ -31,7 +31,7 @@ class InicioFragment : Fragment() {
         _binding = FragmentInicioBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-
+            //CODIGO
 
         return root
     }

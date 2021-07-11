@@ -1,13 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.alimentos.AlimentosFragment">
+    tools:context=".ui.alimentos.AlimentosFragment"
+    android:orientation="vertical"
+    android:id="@+id/alimentosFragment"
+    android:background="@color/white">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/alimentosText"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/brown"
+                />
+
+            <Button android:id="@+id/btn_lacteos"
+                android:layout_width="296dp"
+                android:layout_height="55dp"
+                android:text="@string/lacteos"
+                android:textAllCaps="false"
+                android:background="@drawable/round_unable_button"
+                android:textColor="@color/advice"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="33dp"
+                android:enabled="false"/>
+
+            <Button android:id="@+id/btn_proteina"
+                android:layout_width="296dp"
+                android:layout_height="55dp"
+                android:text="@string/proteina"
+                android:textAllCaps="false"
+                android:background="@drawable/round_unable_button"
+                android:textColor="@color/advice"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:enabled="false"/>
+
+            <Button android:id="@+id/btn_legumbres"
+                android:layout_width="296dp"
+                android:layout_height="55dp"
+                android:text="@string/legumbres"
+                android:textAllCaps="false"
+                android:background="@drawable/round_unable_button"
+                android:textColor="@color/advice"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:enabled="false"/>
+
+            <Button android:id="@+id/btn_verduras"
+                android:layout_width="296dp"
+                android:layout_height="55dp"
+                android:text="@string/verduras"
+                android:textAllCaps="false"
+                android:background="@drawable/round_unable_button"
+                android:textColor="@color/advice"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:enabled="false"/>
+
+            <Button android:id="@+id/btn_frutas"
+                android:layout_width="296dp"
+                android:layout_height="55dp"
+                android:text="@string/frutas"
+                android:textAllCaps="false"
+                android:background="@drawable/round_beige_button"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:enabled="true"/>
+
+            <Button android:id="@+id/btn_cereales"
+                android:layout_width="296dp"
+                android:layout_height="55dp"
+                android:text="@string/cereales"
+                android:textAllCaps="false"
+                android:background="@drawable/round_unable_button"
+                android:textColor="@color/advice"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:enabled="false"/>
+
+            <Button android:id="@+id/btn_grasas"
+                android:layout_width="296dp"
+                android:layout_height="55dp"
+                android:text="@string/grasas"
+                android:textAllCaps="false"
+                android:background="@drawable/round_unable_button"
+                android:textColor="@color/advice"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

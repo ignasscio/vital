@@ -3,11 +3,180 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.recetas.RecetasFragment">
+    tools:context=".ui.recetas.RecetasFragment"
+    android:id="@+id/recetasFragment"
+    android:background="@color/white">
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Recetas" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="¿Que se te antoja hoy?"
+            android:textAlignment="center"
+
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView android:id="@+id/img_inicio_recRecetas"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="76dp"
+                android:src="@mipmap/recomendadosreceta"
+                android:scaleType="fitCenter"/>
+
+            <ImageView android:id="@+id/img_inicio_favoritos"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="76dp"
+                android:src="@mipmap/favoritos"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/recomendations"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/favorites"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Botones de seleccion -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp">
+
+
+        <Button
+            android:id="@+id/btn_Desayuno"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/breakfast"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_Snacks"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/snack"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_Comida"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_beige_button"
+            android:text="@string/meal"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_meriendas"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/merienda"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_Cenas"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/dinner"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_Postres"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/desserts"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_Bebidas"
+            android:layout_marginTop="10dp"
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:background="@drawable/round_gray_button"
+            android:text="@string/drinks"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/advice"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:textAllCaps="false"/>
+
+
+
+    </LinearLayout>
 
 </FrameLayout>

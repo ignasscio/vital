@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ejercicios.EjercicioFragment"
+    android:orientation="vertical"
+    android:id="@+id/ejercicioFragment"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView android:id="@+id/img_muestraEjercicio"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@mipmap/gluteos_sentadilla"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sentadilla"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="25sp"
+                android:textColor="@color/gray_text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="44dp"
+                android:layout_marginTop="31dp">
+
+                <TextView android:id="@+id/textView_numVeces"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="10 veces"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_text"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_semi_bold"/>
+
+                <TextView android:id="@+id/textView_numRepeticiones"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="5 repeticiones"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_text"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_semi_bold"/>
+
+                <TextView android:id="@+id/textView_tiempo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="20 minutos"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_text"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_semi_bold"/>
+
+            </LinearLayout>
+
+            <TextView android:id="@+id/textView_ejercicioRecomendaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Te recomendamos que comiences a hacer sentadillas, sin peso, y luego comiences a añadirlo poco a poco, para ir ejerciendo más presión en los músculos."
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="15dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/advice"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="44dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="43dp">
+
+                <LinearLayout android:id="@+id/linearLayout_cronometro"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@mipmap/cronometro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cronómetro"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <Button android:id="@+id/btn_tiempo"
+                        android:layout_width="86dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/round_beige_button"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="20 minutos"
+                        android:textAllCaps="false"
+                        android:layout_toRightOf="@id/linearLayout_cronometro"
+                        />
+
+
+                    <Button android:id="@+id/btn_empezar"
+                        android:layout_width="86dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/round_orange_button"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="Empezar"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="15dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView android:id="@+id/textView_instruccionesEjercicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="31dp"
+                android:text="La manera correcta de realizar una sentadilla es: 1. parándote derecho, preferiblemente con las piernas bien separadas. 2. Flexiona las rodillas, sin sobrepasar la punta de los pies, mientras sacas tu cadera ligeramente hacia atrás. 3. Baja hasta donde puedas y vuelve al inicio."
+                android:textSize="14dp"
+                android:textColor="@color/brown"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="45dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

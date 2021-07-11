@@ -18,8 +18,8 @@
 
     <string name="question_whichGenre">¿Cuál es tu género?</string>
     <string name="question_whichAge">¿Cuántos años tienes?</string>
-    <string name="question_whichHeight">¿Cuántos años mides? (cm)</string>
-    <string name="question_whichWeight">¿Cuántos pesas? (kg)</string>
+    <string name="question_whichHeight">¿Cuánto mides?</string>
+    <string name="question_whichWeight">¿Cuánto pesas?</string>
 
     <string name="man">Hombre</string>
     <string name="woman">Mujer</string>
@@ -37,5 +37,34 @@
     <string name="actual">Actual</string>
     <string name="recomendations">Recomendaciones</string>
     <string name="favorites">Favoritos</string>
+
+    <!-- RECETAS -->
+    <string name="breakfast">Desayunos</string>
+    <string name="snack">Snacks</string>
+    <string name="meal">Comidas</string>
+    <string name="merienda">Meriendas</string>
+    <string name="dinner">Cenas</string>
+    <string name="desserts">Postres</string>
+    <string name="drinks">Bebidas</string>
+
+
+    <!-- Alimentos -->
+    <string name="alimentosText">Selecciona para escoger tus ingredientes</string>
+    <string name="lacteos">Lácteos</string>
+    <string name="proteina">Proteína</string>
+    <string name="legumbres">Legumbres</string>
+    <string name="verduras">Verduras</string>
+    <string name="frutas">Frutas</string>
+    <string name="cereales">Cereales</string>
+    <string name="grasas">Grasas</string>
+
+    <!-- Ejercicios -->
+    <string name="calentamiento">Calentamiento</string>
+    <string name="brazos">Brazos</string>
+    <string name="pechos">Pecho</string>
+    <string name="espalda">Espalda</string>
+    <string name="cintura">Cintura</string>
+    <string name="gluteos">Glúteos</string>
+    <string name="piernas">Piernas</string>
 
 </resources>

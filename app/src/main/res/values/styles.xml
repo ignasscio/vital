@@ -6,7 +6,13 @@
     </style>
 
     <style name="SplashTheme" parent="AppTheme">
-        <item name="android:windowBackground">@drawable/vital</item>
+        <item
+
+            name="android:windowBackground">@drawable/vital
+
+
+        </item>
+
 
     </style>
 

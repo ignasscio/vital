@@ -1,32 +1,45 @@
 package itson.edu.mx.vital.ui.perfil
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import itson.edu.mx.vital.R
+import itson.edu.mx.vital.databinding.PerfilFragmentBinding
 
 class PerfilFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = PerfilFragment()
-    }
+    private lateinit var perfilViewModel: PerfilViewModel
+    private var _binding: PerfilFragmentBinding? = null
 
-    private lateinit var viewModel: PerfilViewModel
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.perfil_fragment, container, false)
+        perfilViewModel =
+            ViewModelProvider(this).get(PerfilViewModel::class.java)
+
+        _binding = PerfilFragmentBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+
+        //MAGIA
+
+
+        return root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(PerfilViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
-
 }

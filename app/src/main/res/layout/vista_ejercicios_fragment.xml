@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ejercicios.VistaEjerciciosFragment"
+    android:id="@+id/vistaEjerciciosFragment"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/textView_nombreEjercicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glúteos"
+                android:textSize="25dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="center"
+                android:layout_marginTop="21dp"/>
+
+            <GridView
+                android:id="@+id/gridView_ejercicios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="38dp"
+                android:numColumns="2"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

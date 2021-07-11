@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/ejercicioView"
+    android:background="@color/white">
+
+    <ImageView android:id="@+id/img_ejercicio"
+        android:layout_width="153dp"
+        android:layout_height="111dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/gluteos_abduccion"
+        android:layout_gravity="center"/>
+
+    <TextView android:id="@+id/textView_nombreEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abducción"
+        android:textColor="@color/brown"
+        android:textSize="12dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+</LinearLayout>

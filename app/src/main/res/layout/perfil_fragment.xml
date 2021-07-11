@@ -3,11 +3,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.perfil.PerfilFragment">
+    android:orientation="vertical"
+    tools:context=".ui.perfil.PerfilFragment"
+    android:id="@+id/perfilFragment"
+    android:background="@color/white">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Perfil" />
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView android:id="@+id/img_genero"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/mujer"
+                android:layout_gravity="center"
+                android:layout_marginTop="68dp"/>
+
+            <TextView android:id="@+id/textView_nombreUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estela Álvarez"
+                android:textSize="25sp"
+                android:textColor="@color/gray_text"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tu actividad hoy"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:background="@color/gray_button"
+                android:textColor="@color/gray_text"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="16dp"
+                android:enabled="false"/>
+
+            <Button android:id="@+id/btn_perfil_receta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Receta"
+                android:background="@drawable/round_beige_button"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="55dp"
+                android:layout_marginTop="48dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="58dp">
+
+                <ImageView
+                    android:layout_width="153dp"
+                    android:layout_height="111dp"
+                    android:src="@mipmap/receta_pollo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pollo con brócoli"
+                    android:textColor="@color/brown"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alimento"
+                android:background="@drawable/round_gray_button"
+                android:textColor="@color/advice"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="55dp"
+                android:layout_marginTop="33dp"
+                android:enabled="false"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Receta"
+                android:background="@drawable/round_gray_button"
+                android:textColor="@color/advice"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="55dp"
+                android:layout_marginTop="38dp"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>
