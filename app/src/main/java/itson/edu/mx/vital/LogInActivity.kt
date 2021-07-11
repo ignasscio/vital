@@ -1,49 +1,37 @@
 package itson.edu.mx.vital
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
-import android.view.View
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
+import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
-import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.Api.ApiOptions.HasOptions
+import com.google.android.gms.common.api.GoogleApiClient
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_log_in.*
 import kotlinx.android.synthetic.main.activity_register.*
 
+
 class LogInActivity : AppCompatActivity() {
 
+
+    lateinit var gso: GoogleSignInOptions
+    lateinit var mGoogleSignInClient: GoogleSignInClient
+    val RC_SIGN_IN: Int = 1
+    lateinit var signOut: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         //Splash
         Thread.sleep(3000)
         setTheme(R.style.AppTheme)
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
 
-
-        ////TEST *
-        //AGREGAR  recycler view
-        //AGREGAR  recycler
-        /*
-        adapter = MainAdapter(this)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = adapter
-        observeData()
-        */
-        /*
-        val dummyList:MutableList<Paciente> = mutableListOf<Paciente>()
-        dummyList.add(Paciente("https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg",
-            "Paciente 1","Emferdedad de prueba"))
-        adapter.setListaData(dummyList)
-        adapter.notifyDataSetChanged()
-*/
 
 
         //Analytics Event
@@ -56,25 +44,17 @@ class LogInActivity : AppCompatActivity() {
 
         //Setup
         setup()
+        //guerdado de datos
+
+        var prefs:SharedPreferences = getSharedPreferences()
 
         //showindex
-        //  showIndex()
+        //showIndex()
     }
 
     private fun setup() {
         title = " Vital"
-       /*
-        btn_create.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
 
-
-        }
-        */
-
-
-        //  emailEditText.setText("3@gmail.com")
-        //  passwordEditText.setText("123456")
         btn_login.setOnClickListener {
             if (et_emailLogin.text.isNotEmpty() && et_passwordLogin.text.isNotEmpty()) {
 
@@ -97,6 +77,13 @@ class LogInActivity : AppCompatActivity() {
             }
 
         }
+
+        ///Crear cuenta
+        btn_createAcc.setOnClickListener {
+            val intent: Intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun showAlert() {
@@ -120,20 +107,5 @@ class LogInActivity : AppCompatActivity() {
         startActivity(profileIntent)
     }
 
-    //Muestra el index
-    private fun showIndex() {
-        val profileIntent = Intent(this, RegisterActivity::class.java).apply {
-        }
-        startActivity(profileIntent)
-
-
-    }
-/*
-    fun observeData() {
-        viewModel.fetuserData().observe(this, Observer {
-            adapter.setListaData(it)
-            adapter.notifyDataSetChanged()
-        })
-*/
 
 }
