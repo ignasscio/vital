@@ -20,7 +20,6 @@
             android:layout_gravity="center"
             android:text="Ejercicios"
             android:textAlignment="center"
-
             android:textSize="25sp" />
 
         <LinearLayout
