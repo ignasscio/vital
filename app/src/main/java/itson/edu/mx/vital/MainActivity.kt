@@ -10,6 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import android.util.Log
 import itson.edu.mx.vital.databinding.ActivityMainBinding
+import itson.edu.mx.vital.storage.FavoritosStorage
 
 enum class ProviderType{
     BASIC
@@ -37,6 +38,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_ejercicios, R.id.navigation_perfil
             )
         )
+
+        FavoritosStorage().fillFavoritos()
+        FavoritosStorage().test()
 
         //inicio
         //alimento
