@@ -10,20 +10,20 @@ class FavoritosStorage {
     private var usuario: FirebaseAuth = FirebaseAuth.getInstance()
     val favoritos = storage.collection("favoritos")
 
-    fun fillFavoritos(){
-        favoritos.document().set(hashMapOf("nombre" to "cereza"))
-        favoritos.document().set(hashMapOf("nombre" to "banana"))
-        favoritos.document().set(hashMapOf("nombre" to "durazno"))
-        favoritos.document().set(hashMapOf("nombre" to "fresa"))
-        favoritos.document().set(hashMapOf("nombre" to "manzana"))
-        favoritos.document().set(hashMapOf("nombre" to "moras"))
-        favoritos.document().set(hashMapOf("nombre" to "naranja"))
-        favoritos.document().set(hashMapOf("nombre" to "pera"))
-        favoritos.document().set(hashMapOf("nombre" to "piña"))
-        favoritos.document().set(hashMapOf("nombre" to "sandia"))
-        favoritos.document().set(hashMapOf("nombre" to "uvas"))
-        favoritos.document().set(hashMapOf("nombre" to "zarzamora"))
-    }
+//    fun fillFavoritos(){
+////        favoritos.document().set(hashMapOf("nombre" to "cereza"))
+//        favoritos.document().set(hashMapOf("nombre" to "banana"))
+//        favoritos.document().set(hashMapOf("nombre" to "durazno"))
+//        favoritos.document().set(hashMapOf("nombre" to "fresa"))
+//        favoritos.document().set(hashMapOf("nombre" to "manzana"))
+//        favoritos.document().set(hashMapOf("nombre" to "moras"))
+//        favoritos.document().set(hashMapOf("nombre" to "naranja"))
+//        favoritos.document().set(hashMapOf("nombre" to "pera"))
+//        favoritos.document().set(hashMapOf("nombre" to "piña"))
+//        favoritos.document().set(hashMapOf("nombre" to "sandia"))
+//        favoritos.document().set(hashMapOf("nombre" to "uvas"))
+//        favoritos.document().set(hashMapOf("nombre" to "zarzamora"))
+//    }
 
     fun test(){
         favoritos.get().addOnSuccessListener { result ->

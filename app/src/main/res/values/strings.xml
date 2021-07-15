@@ -67,4 +67,7 @@
     <string name="gluteos">Glúteos</string>
     <string name="piernas">Piernas</string>
 
+
+    <string name="prefs_file">itson.edu.mx.vital.PREFERENCE_FILE_KEY</string>
+
 </resources>

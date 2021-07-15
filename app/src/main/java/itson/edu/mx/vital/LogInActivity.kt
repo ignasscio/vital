@@ -1,5 +1,6 @@
 package itson.edu.mx.vital
 
+import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -23,14 +24,18 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_log_in.*
 import kotlinx.android.synthetic.main.activity_register.*
 
+enum class ProviderType {
+    BASIC,
+    GOOGLE
+}
 
 class LogInActivity : AppCompatActivity() {
-
 
     lateinit var gso: GoogleSignInOptions
     lateinit var mGoogleSignInClient: GoogleSignInClient
     val RC_SIGN_IN: Int = 1
     lateinit var signOut: Button
+//    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -40,6 +45,7 @@ class LogInActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
+
 
 
         //Analytics Event
@@ -90,6 +96,11 @@ class LogInActivity : AppCompatActivity() {
 
 
                         if (it.isSuccessful) {
+//                            val user = auth.currentUser
+
+                            val intent: Intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
+
                             showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
                         } else {
 

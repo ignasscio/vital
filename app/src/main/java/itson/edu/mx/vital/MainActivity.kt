@@ -12,10 +12,6 @@ import android.util.Log
 import itson.edu.mx.vital.databinding.ActivityMainBinding
 import itson.edu.mx.vital.storage.FavoritosStorage
 
-enum class ProviderType{
-    BASIC
-}
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -39,7 +35,6 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
-        FavoritosStorage().fillFavoritos()
         FavoritosStorage().test()
 
         //inicio
