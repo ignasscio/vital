@@ -10,6 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import android.util.Log
 import itson.edu.mx.vital.databinding.ActivityMainBinding
+import itson.edu.mx.vital.storage.ComidasStorage
 import itson.edu.mx.vital.storage.FavoritosStorage
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +36,6 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
-        FavoritosStorage().test()
 
         //inicio
         //alimento

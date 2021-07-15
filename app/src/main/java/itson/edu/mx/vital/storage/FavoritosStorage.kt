@@ -2,8 +2,10 @@ package itson.edu.mx.vital.storage
 
 import android.content.ContentValues.TAG
 import android.util.Log
+import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.QuerySnapshot
 
 class FavoritosStorage {
     private var storage: FirebaseFirestore = FirebaseFirestore.getInstance()
@@ -36,4 +38,7 @@ class FavoritosStorage {
             }
     }
 
+    fun getFavoritos (): Task<QuerySnapshot> {
+        return favoritos.get()
+    }
 }
